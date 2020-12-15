@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { SharedModule } from '../shared/shared.module';
 import { AppRoutingModule } from '../app-routing.module';
+import { FormsModule } from '@angular/forms';
+import { ComponentsModule } from '../components/components.module';
 
 import { DashboardComponent } from '../pages/dashboard/dashboard.component';
 import { ProgressComponent } from '../pages/progress/progress.component';
@@ -19,8 +21,10 @@ import { PagesComponent } from '../pages/pages.component';
   ],
   imports: [
     CommonModule,
+    FormsModule,
     SharedModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ComponentsModule,
   ],
   exports: [
     DashboardComponent,
