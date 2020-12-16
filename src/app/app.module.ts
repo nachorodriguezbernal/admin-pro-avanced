@@ -1,17 +1,22 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+// Modulos
 import { AppRoutingModule } from './app-routing.module';
 import { PagesModule } from './pages/pages.module';
-import { AuthModule } from  './auth/auth.module';
+import { AuthModule } from './auth/auth.module';
 
 import { AppComponent } from './app.component';
-import { NopagesfoundComponent } from './nopagesfound/nopagesfound.component';
+import { NopagefoundComponent } from './nopagefound/nopagefound.component';
+
+
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    NopagesfoundComponent,
+    NopagefoundComponent,
   ],
   imports: [
     BrowserModule,
@@ -19,7 +24,6 @@ import { NopagesfoundComponent } from './nopagesfound/nopagesfound.component';
     PagesModule,
     AuthModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
